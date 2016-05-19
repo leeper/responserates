@@ -3,30 +3,32 @@
 #' @description AAPOR cooperation rate formulae
 #' @template arguments1
 #' @return A numeric value indicating the cooperation rate.
-#' @seealso \code{\link{rr1}}, \code{\link{ref1}}, \code{\link{con1}}
+#' @references
+#'  AAPOR. 2016. \href{http://www.aapor.org/AAPOR_Main/media/publications/Standard-Definitions20169theditionfinal.pdf}{\dQuote{Standard Definitions Final Dispositions of Case Codes and Outcome Rates for Surveys.}}
+#' @seealso \code{\link{rates}}, \code{\link{rr1}}, \code{\link{ref1}}, \code{\link{con1}}
 #' @export
-coop1 <- function(i, p, r, o) {
+coop1 <- function(i = 0, p = 0, r = 0, o = 0) {
     rate <- (i) / ((i + p) + r + o)
-    rate
+    structure(rate, class = "response_rate", rate = "aapor_coop1")
 }
 
 #' @rdname coop
 #' @export
-coop2 <- function(i, p, r, o) {
+coop2 <- function(i = 0, p, r = 0, o = 0) {
     rate <- (i + p) / ((i + p) + r + o)
-    rate
+    structure(rate, class = "response_rate", rate = "aapor_coop2")
 }
 
 #' @rdname coop
 #' @export
-coop3 <- function(i, p, r) {
+coop3 <- function(i = 0, p = 0, r = 0) {
     rate <- (i) / ((i + p) + r)
-    rate
+    structure(rate, class = "response_rate", rate = "aapor_coop3")
 }
 
 #' @rdname coop
 #' @export
-coop4 <- function(i, p, r) {
+coop4 <- function(i = 0, p = 0, r = 0) {
     rate <- (i + p) / ((i + p) + r)
-    rate
+    structure(rate, class = "response_rate", rate = "aapor_coop4")
 }

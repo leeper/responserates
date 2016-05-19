@@ -9,17 +9,17 @@
 \alias{rr6}
 \title{Response Rates}
 \usage{
-rr1(i, p, r, nc, o, uh, uo)
+rr1(i = 0, p = 0, r = 0, nc = 0, o = 0, uh = 0, uo = 0)
 
-rr2(i, p, r, nc, o, uh, uo)
+rr2(i = 0, p = 0, r = 0, nc = 0, o = 0, uh = 0, uo = 0)
 
-rr3(i, p, r, nc, o, uh, uo, e = 1)
+rr3(i = 0, p = 0, r = 0, nc, o = 0, uh = 0, uo = 0, e = 1)
 
-rr4(i, p, r, nc, o, uh, uo, e = 1)
+rr4(i = 0, p = 0, r = 0, nc = 0, o = 0, uh = 0, uo = 0, e = 1)
 
-rr5(i, p, r, nc, o)
+rr5(i = 0, p = 0, r = 0, nc = 0, o = 0)
 
-rr6(i, p, r, nc, o)
+rr6(i = 0, p = 0, r = 0, nc = 0, o = 0)
 }
 \arguments{
 \item{i}{The total number of completed interviews.}
@@ -44,7 +44,10 @@ A numeric value indicating the response rate.
 \description{
 AAPOR response rate formulae
 }
+\references{
+AAPOR. 2016. \href{http://www.aapor.org/AAPOR_Main/media/publications/Standard-Definitions20169theditionfinal.pdf}{\dQuote{Standard Definitions Final Dispositions of Case Codes and Outcome Rates for Surveys.}}
+}
 \seealso{
-\code{\link{coop1}}, \code{\link{ref1}}, \code{\link{con1}}
+\code{\link{rates}}, \code{\link{coop1}}, \code{\link{ref1}}, \code{\link{con1}}
 }
 

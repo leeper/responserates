@@ -6,7 +6,7 @@
 \alias{rates.factor}
 \alias{rates.list}
 \alias{rates.table}
-\title{AAPOR Survey}
+\title{AAPOR Survey Response Rates}
 \usage{
 rates(x, ...)
 
@@ -28,7 +28,7 @@ rates(x, ...)
 \item{\dots}{Additional arguments passed to methods.}
 }
 \value{
-A list of class \dQuote{response_rates} containing the calculated response rates. Printing of the results is handled by a method that accepts a \code{fmt} argument in the form required by \code{\link[base]{sprintf}}.
+A list of class \dQuote{aapor_rates} containing the calculated response rates. Printing of the results is handled by a method that accepts a \code{fmt} argument in the form required by \code{\link[base]{sprintf}}.
 }
 \description{
 Calculate AAPOR response, cooperation, refusal, and contact rates.

@@ -1,5 +1,5 @@
 #' @rdname rates
-#' @title AAPOR Survey 
+#' @title AAPOR Survey Response Rates
 #' @description Calculate AAPOR response, cooperation, refusal, and contact rates.
 #' @param x A character or factor vector containing unit-specific disposition codes, or a named table or list summarizing the disposition codes.
 #' @param w Optionally, if \code{x} is a vector of disposition codes, the weights to be applied to each case in calculating final, weighted disposition counts.
@@ -8,7 +8,7 @@
 #' @details This function calculates all response, cooperation, refusal, and contact rates based upon the disposition code information supplied in \code{x}.
 #' The allowed disposition codes are \dQuote{i}, \dQuote{p}, \dQuote{r}, \dQuote{nc}, \dQuote{o}, \dQuote{uh}, and \dQuote{uo}. Both upper and lower case are allowed.
 #' \code{e} is assumed to be 1 unless specified otherwise. Smith (2009) provides a review of estimation of \code{e}.
-#' @return A list of class \dQuote{response_rates} containing the calculated response rates. Printing of the results is handled by a method that accepts a \code{fmt} argument in the form required by \code{\link[base]{sprintf}}.
+#' @return A list of class \dQuote{aapor_rates} containing the calculated response rates. Printing of the results is handled by a method that accepts a \code{fmt} argument in the form required by \code{\link[base]{sprintf}}.
 #' @references
 #'  AAPOR. 2016. \href{http://www.aapor.org/AAPOR_Main/media/publications/Standard-Definitions20169theditionfinal.pdf}{\dQuote{Standard Definitions Final Dispositions of Case Codes and Outcome Rates for Surveys.}}
 #'  Smith, Tom W. 2009. \href{http://www.aapor.org/AAPOR_Main/media/MainSiteFiles/ERATE09.pdf}{\dQuote{A Revised Review of Methods to Estimate the Status of Cases with Unknown Eligibility.}} NORC/University of Chicago.
@@ -52,7 +52,7 @@ rates.disposition_summary <- function(x, ...) {
     rates[["con1"]] <- with(x, con1(i, p, r, nc, o, uh, uo))
     rates[["con2"]] <- with(x, con2(i, p, r, nc, o, uh, uo, e))
     rates[["con3"]] <- with(x, con3(i, p, r, nc, o))
-    out <- structure(rates, class = "response_rates")
+    out <- structure(rates, class = "aapor_rates")
     out
 }
 

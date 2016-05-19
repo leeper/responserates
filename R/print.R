@@ -14,7 +14,7 @@ print.disposition_summary <- function(x, ...) {
 }
 
 #' @export
-print.response_rates <- function(x, fmt = "%.1f%%", ...) {
+print.aapor_rates <- function(x, fmt = "%.1f%%", ...) {
     x <- lapply(x, function(z) formatC(sprintf(fmt = fmt, 100*z), width = 6))
     #cat("Response Rate Summary\n")
     #cat(paste0(rep("=", 21), collapse = ""), "\n")
@@ -38,5 +38,14 @@ print.response_rates <- function(x, fmt = "%.1f%%", ...) {
     cat(" CON1: ", x$con1, "\n")
     cat(" CON2: ", x$con2, "\n")
     cat(" CON3: ", x$con3, "\n")
+    invisible(x)
+}
+
+#' @export
+print.response_rate <- function(x, fmt = "%.1f%%", ...) {
+    cat("Response Rate (", 
+        toupper(attr(x, "rate")), "): ", 
+        formatC(sprintf(fmt = fmt, 100*x), width = 6),
+        "\n", sep = "")
     invisible(x)
 }

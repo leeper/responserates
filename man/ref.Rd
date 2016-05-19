@@ -6,11 +6,11 @@
 \alias{ref3}
 \title{Refusal Rates}
 \usage{
-ref1(i, p, r, nc, o, uh, uo)
+ref1(i = 0, p = 0, r = 0, nc = 0, o = 0, uh = 0, uo = 0)
 
-ref2(i, p, r, nc, o, uh, uo, e = 1)
+ref2(i = 0, p = 0, r = 0, nc = 0, o = 0, uh = 0, uo = 0, e = 1)
 
-ref3(i, p, r, nc, o)
+ref3(i = 0, p = 0, r = 0, nc = 0, o = 0)
 }
 \arguments{
 \item{i}{The total number of completed interviews.}
@@ -35,7 +35,10 @@ A numeric value indicating the refusal rate.
 \description{
 AAPOR refusal rate formulae
 }
+\references{
+AAPOR. 2016. \href{http://www.aapor.org/AAPOR_Main/media/publications/Standard-Definitions20169theditionfinal.pdf}{\dQuote{Standard Definitions Final Dispositions of Case Codes and Outcome Rates for Surveys.}}
+}
 \seealso{
-\code{\link{rr1}}, \code{\link{coop1}}, \code{\link{con1}}
+\code{\link{rates}}, \code{\link{rr1}}, \code{\link{coop1}}, \code{\link{con1}}
 }
 

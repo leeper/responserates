@@ -7,13 +7,13 @@
 \alias{coop4}
 \title{Cooperation Rates}
 \usage{
-coop1(i, p, r, o)
+coop1(i = 0, p = 0, r = 0, o = 0)
 
-coop2(i, p, r, o)
+coop2(i = 0, p, r = 0, o = 0)
 
-coop3(i, p, r)
+coop3(i = 0, p = 0, r = 0)
 
-coop4(i, p, r)
+coop4(i = 0, p = 0, r = 0)
 }
 \arguments{
 \item{i}{The total number of completed interviews.}
@@ -30,7 +30,10 @@ A numeric value indicating the cooperation rate.
 \description{
 AAPOR cooperation rate formulae
 }
+\references{
+AAPOR. 2016. \href{http://www.aapor.org/AAPOR_Main/media/publications/Standard-Definitions20169theditionfinal.pdf}{\dQuote{Standard Definitions Final Dispositions of Case Codes and Outcome Rates for Surveys.}}
+}
 \seealso{
-\code{\link{rr1}}, \code{\link{ref1}}, \code{\link{con1}}
+\code{\link{rates}}, \code{\link{rr1}}, \code{\link{ref1}}, \code{\link{con1}}
 }
 
