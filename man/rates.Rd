@@ -36,7 +36,7 @@ Calculate AAPOR response, cooperation, refusal, and contact rates.
 \details{
 This function calculates all response, cooperation, refusal, and contact rates based upon the disposition code information supplied in \code{x}.
 The allowed disposition codes are \dQuote{i}, \dQuote{p}, \dQuote{r}, \dQuote{nc}, \dQuote{o}, \dQuote{uh}, and \dQuote{uo}. Both upper and lower case are allowed.
-\code{e} is assumed to be 1 unless specified otherwise. Smith (2009) provides a review of estimation of \code{e}.
+\code{e} is assumed to be 1 unless specified otherwise. Smith (2009) provides a review of estimation of \code{e}. One possible calculation of \code{e} suggested by the Standard Definition's calculator is the number of eligible \eqn{e = \frac{i + p + r + nc + o}{i + p + r + nc + o + uo}}. The default used here, however, is the more conservative value of 1.
 }
 \examples{
 # `x` is a character vector of codes

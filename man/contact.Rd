@@ -35,6 +35,15 @@ A numeric value indicating the contact rate.
 \description{
 AAPOR contact rate formulae
 }
+\details{
+Contact rates measure the number of contacted units (including refusals and others) out of the total units sampled. The denominator for each rate varies. Here are the definitions of each response rate, according to AAPOR's \dQuote{Standard Definitions}:
+\itemize{
+ \item Contact Rate 1 (CON1) assumes that all cases of indeterminate eligibility are actually eligible.
+ \item Contact Rate 2 (CON2) includes in the base only the estimated eligible cases among the undetermined cases.
+ \item Contact Rate 3 (CON3) includes in the base only known eligible cases.
+}
+One possible calculation of \code{e} suggested by the Standard Definition's calculator is the number of eligible \eqn{e = \frac{i + p + r + nc + o}{i + p + r + nc + o + uo}}. The default used here, however, is the more conservative value of 1.
+}
 \references{
 AAPOR. 2016. \href{http://www.aapor.org/AAPOR_Main/media/publications/Standard-Definitions20169theditionfinal.pdf}{\dQuote{Standard Definitions Final Dispositions of Case Codes and Outcome Rates for Surveys.}}
 }

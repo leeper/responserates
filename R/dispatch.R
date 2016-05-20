@@ -7,7 +7,7 @@
 #' @param \dots Additional arguments passed to methods.
 #' @details This function calculates all response, cooperation, refusal, and contact rates based upon the disposition code information supplied in \code{x}.
 #' The allowed disposition codes are \dQuote{i}, \dQuote{p}, \dQuote{r}, \dQuote{nc}, \dQuote{o}, \dQuote{uh}, and \dQuote{uo}. Both upper and lower case are allowed.
-#' \code{e} is assumed to be 1 unless specified otherwise. Smith (2009) provides a review of estimation of \code{e}.
+#' \code{e} is assumed to be 1 unless specified otherwise. Smith (2009) provides a review of estimation of \code{e}. One possible calculation of \code{e} suggested by the Standard Definition's calculator is the number of eligible \eqn{e = \frac{i + p + r + nc + o}{i + p + r + nc + o + uo}}. The default used here, however, is the more conservative value of 1.
 #' @return A list of class \dQuote{aapor_rates} containing the calculated response rates. Printing of the results is handled by a method that accepts a \code{fmt} argument in the form required by \code{\link[base]{sprintf}}.
 #' @references
 #'  AAPOR. 2016. \href{http://www.aapor.org/AAPOR_Main/media/publications/Standard-Definitions20169theditionfinal.pdf}{\dQuote{Standard Definitions Final Dispositions of Case Codes and Outcome Rates for Surveys.}}

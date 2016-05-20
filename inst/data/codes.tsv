@@ -1,0 +1,113 @@
+description	code	final
+Complete	1.000	i
+Partial	1.200	p
+Eligible, non-interview	2.000	o
+Refusal and breakoff	2.100	r
+Refusal	2.110	r
+Household-level refusal	2.111	r
+Known-respondent refusal  	2.112	r
+Logged on to survey, did not complete any item	2.112	r
+Read receipt confirmation, refusal	2.112	r
+Implicit refusal  	2.113	r
+Break off/ Implicit refusal	2.120	r
+Non-contact	2.200	nc
+Respondent never available	2.210	nc
+Telephone answering device confirming HH	2.220	nc
+Answering machine household-no message left	2.221	nc
+Answering machine household-message left	2.222	nc
+Unable to gain access to building	2.230	nc
+No one reached at housing unit	2.240	nc
+Respondent unavailable during field period	2.250	nc
+Respondent unavailable during field period	2.260	nc
+Completed questionnaire, but not returned during field period	2.270	nc
+Other, non-refusals	2.300	o
+Deceased respondent	2.310	o
+Physically or mentally unable/incompetent	2.320	o
+Language problem	2.330	o
+Household-level language problem	2.331	o
+Respondent language problem	2.332	o
+No interviewer available for needed language/Wrong language questionnaire	2.333	o
+Literacy problems	2.340	o
+Location/Activity not allowing interview	2.350	o
+Someone other than designate respondent completes all of questionnaire	2.361	o
+Someone other than designate respondent completes part of questionnaire	2.362	o
+Miscellaneous	2.900	o
+Unknown eligibility, non-interview	3.000	uh
+Unknown if housing unit/unknown about address	3.100	uh
+Not attempted or worked/not mailed/No invitation sent	3.110	uh
+Always busy	3.120	uh
+No answer	3.130	uh
+Answering machine-don't know if household	3.140	uh
+Call blocking	3.150	uh
+Technical phone problems	3.160	uh
+Unclear if HH	3.161	uh
+Unable to reach/unsafe area	3.170	uh
+Unable to locate address	3.180	uh
+Nothing returned	3.190	uh
+Housing unit, unknown if eligible respondent	3.200	uo
+No screener completed	3.210	uo
+USPS: Refused by addressee	3.230	uo
+USPS: Refused to accept	3.231	uo
+USPS: Refused to pay postage	3.232	uo
+USPS: Returned to sender due to various USPS violations by addressee	3.240	uo
+USPS: Cannot be delivered	3.250	uo
+USPS: Illegible address	3.251	uo
+USPS: Insufficient address on mail from one P.O to another P.O.	3.252	uo
+USPS: No mail receptacle	3.253	uo
+USPS: Delivery suspended to commercial mailing agency	3.254	uo
+Unknown if person is a HH resident/ mail returned undelivered	3.300	uo
+USPS: Undeliverable as addressed	3.310	uo
+USPS: Attempted -- Addressee not known at place of address	3.311	uo
+USPS: Postal box closed	3.312	uo
+No such address	3.313	uo
+USPS: No such number	3.313	uo
+USPS: No such post office in state	3.313	uo
+USPS: No such street	3.313	uo
+USPS: Vacant	3.313	uo
+Not delivered as addressed	3.314	uo
+USPS: Unable to forward, no deliverable as addressed	3.314	uo
+USPS: Outside delivery limits	3.314	uo
+USPS: Returned for better address	3.314	uo
+USPS: Moved, left no address	3.320	uo
+USPS: Returned for postage	3.330	uo
+USPS: Temporarily away, holding period expired	3.340	uo
+USPS: Unclaimed -- failure to call for held mail	3.350	uo
+USPS: No one signed	3.360	uo
+Returned with forwarding information	3.400	uo
+Returned unopened -- address correction provided	3.410	uo
+Returned opened -- address correction provided	3.420	uo
+USPS: In dispute about which party has rights to deliver	3.500	uo
+Other	3.900	uo
+Returned from an unsampled email address	3.910	uo
+Not eligible	4.000	uo
+Out of sample - other strata than originally coded	4.100	uo
+Fax/data line	4.200	uo
+Non-working/disconnect	4.300	uo
+Non-working number	4.310	uo
+No address exists	4.313	uo
+No such number	4.313	uo
+No such postal office in state	4.313	uo
+No such street	4.313	uo
+Disconnected number	4.320	uo
+Temporarily out of service	4.330	uo
+Special technological circumstances	4.400	uo
+Number changed	4.410	uo
+Call forwarding	4.430	uo
+Residence to residence	4.431	uo
+Non-residence to residence	4.432	uo
+Pager	4.440	uo
+Cell phone	4.450	uo
+Landline phone	4.460	uo
+Nonresidence	4.500	uo
+Business, government office, other organizations	4.510	uo
+Institution	4.520	uo
+Group quarters	4.530	uo
+Person not HH resident	4.540	uo
+Vacant housing unit	4.600	uo
+Regular, vacant residences	4.610	uo
+Regular/Vacation/Temporary residences	4.620	uo
+Other	4.630	uo
+No eligible respondent	4.700	uo
+Quota filled	4.800	uo
+Not eligible - duplicate listing	4.810	uo
+Other 	4.900	uo

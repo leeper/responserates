@@ -1,12 +1,12 @@
 Package: responserates
 Type: Package
 Title: AAPOR Survey Response Rates
-Version: 0.1.2
-Date: 2016-05-19
+Version: 0.1.3
+Date: 2016-05-20
 Authors@R: c(person("Thomas J.", "Leeper", role = c("aut", "cre"),
                     email = "thosjleeper@gmail.com"))
 Maintainer: Thomas J. Leeper <thosjleeper@gmail.com>
-Description: Functions to calculate survey response rates according to the American Association for Public Opinion Research's (AAPOR) Standard Definitions <http://www.aapor.org/Standards-Ethics/Standard-Definitions-(1).aspx>.
+Description: Functions to calculate survey response rates according to the American Association for Public Opinion Research's (AAPOR) Standard Definitions <http://www.aapor.org/Standards-Ethics/Standard-Definitions.aspx>.
 License: MIT + file LICENSE
 URL: https://github.com/leeper/responserates
 BugReports: https://github.com/leeper/responserates/issues
