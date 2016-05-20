@@ -125,8 +125,38 @@ rates(list(i = 100, nc = 20, uo = 100, e = .25))
 ##  CON3:   83.3%
 ```
 
+The package also exposes functions for calculating each response rate (`rr1()`, `rr2()`, `ref1()`, etc.) based upon counts of disposition codes for a survey. These can be useful, for example, when one is only interested in a particular rate becuase the design is very simple (such as `rr1(i = 10, r = 5)`) or when handling complex survey designs. For instance, in a dual-frame survey, the overall response rate needs to average the response rate for each frame:
 
-The package also exposes functions for calculating each response rate (`rr1()`, `rr2()`, `ref1()`, etc.) based upon counts of disposition codes for a survey.
+
+```r
+# landline frame
+(ll <- rr1(i = 100, r = 400, nc = 300))
+```
+
+```
+## Response Rate (AAPOR_RR1):  12.5%
+```
+
+```r
+# cellphone frame
+(cp <- rr1(i = 150, r = 300, nc = 200))
+```
+
+```
+## Response Rate (AAPOR_RR1):  23.1%
+```
+
+```r
+# Pr(interviews from ll frame)
+p <- 100/150
+
+# overall response rate
+(ll * p) + (cp * (1-p))
+```
+
+```
+## Response Rate (AAPOR_RR1):  16.0%
+```
 
 
 ## Installation ##
