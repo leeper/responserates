@@ -1,7 +1,7 @@
 Package: responserates
 Type: Package
 Title: AAPOR Survey Response Rates
-Version: 0.1.3
+Version: 0.1.4
 Date: 2016-05-20
 Authors@R: c(person("Thomas J.", "Leeper", role = c("aut", "cre"),
                     email = "thosjleeper@gmail.com"))
