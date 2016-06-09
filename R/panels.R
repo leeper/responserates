@@ -31,7 +31,7 @@
 #' @seealso \code{\link{rates}}, \code{\link{rr1}}, \code{\link{coop1}}, \code{\link{ref1}}, \code{\link{con1}}
 #' @export
 recr <- function(i, r = 0, nc = 0, o = 0, uh = 0, uo = 0, e = 1) {
-    rate <- rr1(i = i, r = r, nc =nc, o = o, uh =uh, uo = uo, e = e)
+    rate <- rr3(i = i, r = r, nc =nc, o = o, uh =uh, uo = uo, e = e)
     rate
 }
 
